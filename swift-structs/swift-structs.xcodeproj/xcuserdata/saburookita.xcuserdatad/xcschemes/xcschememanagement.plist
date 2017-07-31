@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>swift-structs-test.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>swift-structs.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A86FB82D1F2F20A300A653E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A8F0F4791F2F093B0047D1C4</key>
 		<dict>
 			<key>primary</key>

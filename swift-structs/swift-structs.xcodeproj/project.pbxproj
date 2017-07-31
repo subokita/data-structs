@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A86FB83E1F2F228D00A653E7 /* OrderedDictTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FB8361F2F20BD00A653E7 /* OrderedDictTest.swift */; };
+		A86FB83F1F2F235D00A653E7 /* OrderedDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0F4841F2F09490047D1C4 /* OrderedDict.swift */; };
 		A8F0F47E1F2F093B0047D1C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0F47D1F2F093B0047D1C4 /* main.swift */; };
 		A8F0F4851F2F09490047D1C4 /* OrderedDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0F4841F2F09490047D1C4 /* OrderedDict.swift */; };
 /* End PBXBuildFile section */
@@ -24,12 +26,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A86FB82E1F2F20A300A653E7 /* swift-structs-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-structs-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86FB8321F2F20A300A653E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A86FB8361F2F20BD00A653E7 /* OrderedDictTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictTest.swift; sourceTree = "<group>"; };
 		A8F0F47A1F2F093B0047D1C4 /* swift-structs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-structs"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0F47D1F2F093B0047D1C4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A8F0F4841F2F09490047D1C4 /* OrderedDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDict.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A86FB82B1F2F20A300A653E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8F0F4771F2F093B0047D1C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,10 +52,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A86FB82F1F2F20A300A653E7 /* swift-structs-test */ = {
+			isa = PBXGroup;
+			children = (
+				A86FB8321F2F20A300A653E7 /* Info.plist */,
+				A86FB8361F2F20BD00A653E7 /* OrderedDictTest.swift */,
+			);
+			path = "swift-structs-test";
+			sourceTree = "<group>";
+		};
 		A8F0F4711F2F093B0047D1C4 = {
 			isa = PBXGroup;
 			children = (
 				A8F0F47C1F2F093B0047D1C4 /* swift-structs */,
+				A86FB82F1F2F20A300A653E7 /* swift-structs-test */,
 				A8F0F47B1F2F093B0047D1C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				A8F0F47A1F2F093B0047D1C4 /* swift-structs */,
+				A86FB82E1F2F20A300A653E7 /* swift-structs-test.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +91,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A86FB82D1F2F20A300A653E7 /* swift-structs-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86FB8351F2F20A300A653E7 /* Build configuration list for PBXNativeTarget "swift-structs-test" */;
+			buildPhases = (
+				A86FB82A1F2F20A300A653E7 /* Sources */,
+				A86FB82B1F2F20A300A653E7 /* Frameworks */,
+				A86FB82C1F2F20A300A653E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-structs-test";
+			productName = "swift-structs-test";
+			productReference = A86FB82E1F2F20A300A653E7 /* swift-structs-test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A8F0F4791F2F093B0047D1C4 /* swift-structs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8F0F4811F2F093B0047D1C4 /* Build configuration list for PBXNativeTarget "swift-structs" */;
@@ -95,6 +135,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Saburo Okita";
 				TargetAttributes = {
+					A86FB82D1F2F20A300A653E7 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 					A8F0F4791F2F093B0047D1C4 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
@@ -114,11 +158,31 @@
 			projectRoot = "";
 			targets = (
 				A8F0F4791F2F093B0047D1C4 /* swift-structs */,
+				A86FB82D1F2F20A300A653E7 /* swift-structs-test */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A86FB82C1F2F20A300A653E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A86FB82A1F2F20A300A653E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86FB83E1F2F228D00A653E7 /* OrderedDictTest.swift in Sources */,
+				A86FB83F1F2F235D00A653E7 /* OrderedDict.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8F0F4761F2F093B0047D1C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +195,32 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A86FB8331F2F20A300A653E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "swift-structs-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sub.swift-structs-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A86FB8341F2F20A300A653E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "swift-structs-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "sub.swift-structs-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		A8F0F47F1F2F093B0047D1C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -240,6 +330,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A86FB8351F2F20A300A653E7 /* Build configuration list for PBXNativeTarget "swift-structs-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86FB8331F2F20A300A653E7 /* Debug */,
+				A86FB8341F2F20A300A653E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A8F0F4751F2F093B0047D1C4 /* Build configuration list for PBXProject "swift-structs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -256,6 +354,7 @@
 				A8F0F4831F2F093B0047D1C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
