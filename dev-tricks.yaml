@@ -1,0 +1,7 @@
+
+tricks:
+- watchdog.tricks.ShellCommandTrick:
+    patterns        : ["*.py", "dev-tricks.yaml"]
+    shell_command   : "clear; \
+                      python3 -m python-structs.disjoint_set"
+    wait_for_process: true
