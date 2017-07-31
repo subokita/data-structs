@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A86FB83E1F2F228D00A653E7 /* OrderedDictTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FB8361F2F20BD00A653E7 /* OrderedDictTest.swift */; };
 		A86FB83F1F2F235D00A653E7 /* OrderedDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0F4841F2F09490047D1C4 /* OrderedDict.swift */; };
+		A86FB8411F2F3A2C00A653E7 /* DisjointSetForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FB8401F2F3A2C00A653E7 /* DisjointSetForest.swift */; };
+		A86FB8421F2F3A3000A653E7 /* DisjointSetForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FB8401F2F3A2C00A653E7 /* DisjointSetForest.swift */; };
 		A8F0F47E1F2F093B0047D1C4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0F47D1F2F093B0047D1C4 /* main.swift */; };
 		A8F0F4851F2F09490047D1C4 /* OrderedDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F0F4841F2F09490047D1C4 /* OrderedDict.swift */; };
 /* End PBXBuildFile section */
@@ -29,6 +31,7 @@
 		A86FB82E1F2F20A300A653E7 /* swift-structs-test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-structs-test.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86FB8321F2F20A300A653E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A86FB8361F2F20BD00A653E7 /* OrderedDictTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictTest.swift; sourceTree = "<group>"; };
+		A86FB8401F2F3A2C00A653E7 /* DisjointSetForest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisjointSetForest.swift; sourceTree = "<group>"; };
 		A8F0F47A1F2F093B0047D1C4 /* swift-structs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-structs"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F0F47D1F2F093B0047D1C4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A8F0F4841F2F09490047D1C4 /* OrderedDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDict.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 			children = (
 				A8F0F47D1F2F093B0047D1C4 /* main.swift */,
 				A8F0F4841F2F09490047D1C4 /* OrderedDict.swift */,
+				A86FB8401F2F3A2C00A653E7 /* DisjointSetForest.swift */,
 			);
 			path = "swift-structs";
 			sourceTree = "<group>";
@@ -178,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86FB8421F2F3A3000A653E7 /* DisjointSetForest.swift in Sources */,
 				A86FB83E1F2F228D00A653E7 /* OrderedDictTest.swift in Sources */,
 				A86FB83F1F2F235D00A653E7 /* OrderedDict.swift in Sources */,
 			);
@@ -187,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86FB8411F2F3A2C00A653E7 /* DisjointSetForest.swift in Sources */,
 				A8F0F47E1F2F093B0047D1C4 /* main.swift in Sources */,
 				A8F0F4851F2F09490047D1C4 /* OrderedDict.swift in Sources */,
 			);
@@ -267,6 +273,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -308,6 +315,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

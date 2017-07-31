@@ -8,23 +8,17 @@
 
 import Foundation
 
-var ordered_dict: OrderedDict<Int, String> = [
-    3: "value 3",
-    0: "value 0",
-    1: "value 1",
-    2: "value 2",
+var tree_nodes = [
+    TreeNode(index: 0, rank: 0),
+    TreeNode(index: 1, rank: 0),
+    TreeNode(index: 2, rank: 0),
 ]
 
-for (key, value) in ordered_dict {
-    print("\(key) \(String(describing: value))")
+
+
+DisjointSetForest.union(a: tree_nodes[0], b: tree_nodes[1])
+
+
+for tree_node in tree_nodes {
+    print( tree_node.description )
 }
-
-
-var result = ordered_dict.map{ (key, value) in (key, value?.uppercased()) }
-print( result )
-
-
-ordered_dict.removeValue(forKey: 0)
-
-print( ordered_dict.description )
-
